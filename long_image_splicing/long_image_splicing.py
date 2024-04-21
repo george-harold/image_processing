@@ -19,7 +19,6 @@ def save_concatenated_images(image_paths, batch_size=4, vertical=True, save_path
     for i in range(0, len(image_paths), batch_size):
         batch_paths = image_paths[i :i+batch_size]
         result_image = concatenate_images(batch_paths, vertical)
-
         result_image.save(save_path.format(i // batch_size + 1))
 
 imagePaths = list(glob.glob(os.path.join("dataset", "*")))
