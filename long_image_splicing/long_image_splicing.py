@@ -8,9 +8,6 @@ import numpy as np
 import glob
 import os
 
-import numpy as np
-from PIL import Image
-
 def concatenate_images(image_paths, vertical=True):
     imageArrays = [np.array(Image.open(path)) for path in image_paths]
     axis = 0 if vertical else 1
