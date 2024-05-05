@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # !/usr/bin/env python
 # author: harold-chen
-# website: https://github.com/george-harold/some_tools
+# website: https://github.com/george-harold
 
 from PIL import Image
 import numpy as np
